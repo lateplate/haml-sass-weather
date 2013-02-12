@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <head>
-    <title>Weather [dankim]</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript" src="//use.typekit.net/shv6osi.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="js/weather.js"></script>
+  <title>Weather [dankim]</title>
+  <meta charset='UTF-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <link href='css/styles-original.css' media='screen' rel='stylesheet' type='text/css'>
+  <script src='//use.typekit.net/shv6osi.js' type='text/javascript'></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+  <script src='http://code.jquery.com/jquery-1.9.0.min.js' type='text/javascript'></script>
+  <script src='js/weather.js' type='text/javascript'></script>
 </head>
 <body>
-  <div class="container">
-  	<section class="rightnow group">
-  		<div class="summary summary-rightnow">
-      		<h2 class="zero-box">Right Now</h2> 
-          <h3 class="zero-box current-location" id="current-location"></h3>
-      		<h3 class="small-box" id="current-temp"></h3>
-      		<h3 class="small-box" id="current-condition"></h3>
-  		</div>
-  		<div id="current-icon" class="icon icon-rightnow sunny-rightnow"></div>
-  	</section>
-  	<section class="forecast-grid group">
-  		<div class="forecast group">
-  			<div class="summary summary-forecast">
-      		<h2 id="day-one-name"></h2> 
-      		<h3 id='day-one-temp'></h3>
-      		<h3 id='day-one-conditions'></h3>
-    		</div>
-    		<div id="day-one-icon" class="icon"></div>
-  		</div>
-  		<div class="forecast group">
-  			<div class="summary summary-forecast">
-      		<h2 id="day-two-name"></h2> 
-      		<h3 id="day-two-temp"></h3>
-      		<h3 id="day-two-conditions"></h3>
-    		</div>
-    		<div id="day-two-icon" class="icon"></div>
-  		</div>
-  		<div class="forecast group">
-  			<div class="summary summary-forecast">
-      		<h2 id="day-three-name"></h2> 
-      		<h3 id="day-three-temp"></h3>
-      		<h3 id="day-three-conditions"></h3>
-    		</div>
-    		<div id="day-three-icon" class="icon"></div>
-  		</div>
-  		<div class="forecast group">
-  			<div class="summary summary-forecast">
-          <h2 id="day-four-name"></h2> 
-          <h3 id="day-four-temp"></h3>
-          <h3 id="day-four-conditions"></h3>
+  <div class='container'>
+    <section class='rightnow group'>
+      <div class='summary summary-rightnow'>
+        <h2 class='zero-box'>
+          Right Now
+        </h2>
+        <h3 class='zero-box current-location' id='current-location'></h3>
+        <h3 class='small-box' id='current-temp'></h3>
+        <h3 class='small-box' id='current-condition'></h3>
+      </div>
+      <div class='icon icon-rightnow sunny-rightnow' id='current-icon'></div>
+    </section>
+    <section class='forecast-grid group'>
+      <div class='forecast group'>
+        <div class='summary summary-forecast'>
+          <h2 id='day-one-name'></h2>
+          <h2 id='day-one-temp'></h2>
+          <h2 id='day-one-conditions'></h2>
         </div>
-        <div id="day-four-icon" class="icon"></div>
-  		</div>
-  		<div class="forecast group">
-  			<div class="summary summary-forecast">
-          <h2 id="day-five-name"></h2> 
-          <h3 id="day-five-temp"></h3>
-          <h3 id="day-five-conditions"></h3>
+        <div class='icon' id='day-one-icon'></div>
+      </div>
+      <div class='forecast group'>
+        <div class='summary summary-forecast'>
+          <h2 id='day-two-name'></h2>
+          <h2 id='day-two-temp'></h2>
+          <h2 id='day-two-conditions'></h2>
         </div>
-        <div id="day-five-icon" class="icon"></div>
-  		</div>
-  	</section>
-    <footer class="credit-line">
-        Weather data generously provided by <a href="http://www.wunderground.com/weather/api/" target="_blank">
-      <img src="images/wunderground.png" alt="Wunderground.com" width="300"></a>
-    </footer>
+        <div class='icon' id='day-two-icon'></div>
+      </div>
+      <div class='forecast group'>
+        <div class='summary summary-forecast'>
+          <h2 id='day-three-name'></h2>
+          <h2 id='day-three-temp'></h2>
+          <h2 id='day-three-conditions'></h2>
+        </div>
+        <div class='icon' id='day-three-icon'></div>
+      </div>
+      <div class='forecast group'>
+        <div class='summary summary-forecast'>
+          <h2 id='day-four-name'></h2>
+          <h2 id='day-four-temp'></h2>
+          <h2 id='day-four-conditions'></h2>
+        </div>
+        <div class='icon' id='day-four-icon'></div>
+      </div>
+      <div class='forecast group'>
+        <div class='summary summary-forecast'>
+          <h2 id='day-five-name'></h2>
+          <h2 id='day-five-temp'></h2>
+          <h2 id='day-five-conditions'></h2>
+        </div>
+        <div class='icon' id='day-five-icon'></div>
+      </div>
+      <footer class='credit-line'>
+        Weather data generously provided by
+        <a href='http://www.wunderground.com/weather/api/' target='_blank'>
+          <img alt='Wunderground.com' src='images/wunderground.png' width='300'>
+        </a>
+      </footer>
+    </section>
   </div>
 </body>

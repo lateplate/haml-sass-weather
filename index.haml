@@ -1,9 +1,56 @@
 !!! 5
 %head
-  %title dankim-preprocessor-base
+  %title Weather [dankim]
   %meta{charset: "UTF-8"}
-  %link{href: "css/styles.css", media: "screen", rel: "stylesheet", type: "text/css"}
+  %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+  %link{href: "css/styles-original.css", media: "screen", rel: "stylesheet", type: "text/css"}
+  %script{type: "text/javascript", src: "//use.typekit.net/shv6osi.js"}
+  :javascript
+    try{Typekit.load();}catch(e){}
+  %script{type: "text/javascript", src: "http://code.jquery.com/jquery-1.9.0.min.js"}
+  %script{type: "text/javascript", src: "js/weather.js"}
 %body
   .container
-    Hello World!
-    
+    %section.rightnow.group
+      %div.summary.summary-rightnow
+        %h2.zero-box
+          Right Now
+        %h3.zero-box.current-location#current-location
+        %h3.small-box#current-temp
+        %h3.small-box#current-condition
+      .icon.icon-rightnow.sunny-rightnow#current-icon
+    %section.forecast-grid.group
+      %div.forecast.group
+        %div.summary.summary-forecast
+          %h2#day-one-name
+          %h2#day-one-temp
+          %h2#day-one-conditions
+        .icon#day-one-icon
+      %div.forecast.group
+        %div.summary.summary-forecast
+          %h2#day-two-name
+          %h2#day-two-temp
+          %h2#day-two-conditions
+        .icon#day-two-icon
+      %div.forecast.group
+        %div.summary.summary-forecast
+          %h2#day-three-name
+          %h2#day-three-temp
+          %h2#day-three-conditions
+        .icon#day-three-icon
+      %div.forecast.group
+        %div.summary.summary-forecast
+          %h2#day-four-name
+          %h2#day-four-temp
+          %h2#day-four-conditions
+        .icon#day-four-icon
+      %div.forecast.group
+        %div.summary.summary-forecast
+          %h2#day-five-name
+          %h2#day-five-temp
+          %h2#day-five-conditions
+        .icon#day-five-icon
+      %footer.credit-line
+        Weather data generously provided by
+        %a{href: "http://www.wunderground.com/weather/api/", target: "_blank"}
+          %img{src: "images/wunderground.png", alt: "Wunderground.com", width: "300"}
