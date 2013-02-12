@@ -1,0 +1,51 @@
+.container
+  @extend %center-box
+  max-width: 1280px
+  position: relative
+
+.week-grid
+  width: 100%
+
+.summary
+  width: 100%
+
+.icon
+  @extend %hide
+
+.forecast
+  @extend .group
+  width: 97% /*400px*/
+  font-size: 1.8em
+  border: 1px solid black
+  margin: 5px 5px
+
+.rightnow
+  width: 97.5%
+  margin: 5px 5px
+  font-size: 2.5em
+
+.zero-box
+  @extend %zero-margin
+  @extend %zero-padding
+
+.small-box
+  @extend %zero-padding
+  margin: 10px 0
+
+.current-location
+  font-size: ($font-size-base * 0.5)
+
+.credit-line
+  width: 75%
+  margin: 20px auto
+  text-align: center
+
+.group:before, .group:after
+  display: table
+  content: ""
+
+.group:after
+  clear: both
+
+.group
+  *zoom: 1

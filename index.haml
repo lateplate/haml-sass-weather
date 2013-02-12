@@ -3,7 +3,7 @@
   %title Weather [dankim]
   %meta{charset: "UTF-8"}
   %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-  %link{href: "css/styles-original.css", media: "screen", rel: "stylesheet", type: "text/css"}
+  %link{href: "css/styles.css", media: "screen", rel: "stylesheet", type: "text/css"}
   %script{type: "text/javascript", src: "//use.typekit.net/shv6osi.js"}
   :javascript
     try{Typekit.load();}catch(e){}
@@ -11,7 +11,7 @@
   %script{type: "text/javascript", src: "js/weather.js"}
 %body
   .container
-    %section.rightnow.group
+    %section.rightnow
       %div.summary.summary-rightnow
         %h2.zero-box
           Right Now
@@ -19,32 +19,32 @@
         %h3.small-box#current-temp
         %h3.small-box#current-condition
       .icon.icon-rightnow.sunny-rightnow#current-icon
-    %section.forecast-grid.group
-      %div.forecast.group
+    %section.forecast-grid
+      %div.forecast
         %div.summary.summary-forecast
           %h2#day-one-name
           %h2#day-one-temp
           %h2#day-one-conditions
         .icon#day-one-icon
-      %div.forecast.group
+      %div.forecast
         %div.summary.summary-forecast
           %h2#day-two-name
           %h2#day-two-temp
           %h2#day-two-conditions
         .icon#day-two-icon
-      %div.forecast.group
+      %div.forecast
         %div.summary.summary-forecast
           %h2#day-three-name
           %h2#day-three-temp
           %h2#day-three-conditions
         .icon#day-three-icon
-      %div.forecast.group
+      %div.forecast
         %div.summary.summary-forecast
           %h2#day-four-name
           %h2#day-four-temp
           %h2#day-four-conditions
         .icon#day-four-icon
-      %div.forecast.group
+      %div.forecast
         %div.summary.summary-forecast
           %h2#day-five-name
           %h2#day-five-temp

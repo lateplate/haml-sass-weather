@@ -1,0 +1,218 @@
+/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_placeholders.sass */
+body, .zero-box, section {
+  margin: 0; }
+
+/* line 4, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_placeholders.sass */
+.zero-box, section, .small-box {
+  padding: 0; }
+
+/* line 7, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_placeholders.sass */
+.icon {
+  display: none; }
+
+/* line 10, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_placeholders.sass */
+.container {
+  margin: 0 auto; }
+
+/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 15, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 23, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+a:focus {
+  outline: thin dotted; }
+
+/* line 26, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 30, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+h1 {
+  font-size: 2em; }
+
+/* line 33, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+h2, h3 {
+  text-align: center; }
+
+/* line 36, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+h2 {
+  text-transform: uppercase;
+  color: #003366;
+  font-family: "ff-tisa-web-pro", sans-serif; }
+
+/* line 41, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+h3 {
+  font-family: "myriad-pro", sans-serif;
+  font-weight: normal; }
+
+/* line 45, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 49, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_normalize.sass */
+img {
+  border: 0; }
+
+/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.container {
+  max-width: 1280px;
+  position: relative; }
+
+/* line 6, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.week-grid {
+  width: 100%; }
+
+/* line 9, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.summary {
+  width: 100%; }
+
+/* line 15, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.forecast {
+  width: 97%;
+  font-size: 1.8em;
+  border: 1px solid black;
+  margin: 5px 5px; }
+
+/* line 22, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.rightnow {
+  width: 97.5%;
+  margin: 5px 5px;
+  font-size: 2.5em; }
+
+/* line 31, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.small-box {
+  margin: 10px 0; }
+
+/* line 35, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.current-location {
+  font-size: 0.5em; }
+
+/* line 38, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.credit-line {
+  width: 75%;
+  margin: 20px auto;
+  text-align: center; }
+
+/* line 43, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.group:before, .forecast:before, .group:after, .forecast:after {
+  display: table;
+  content: ""; }
+
+/* line 47, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.group:after, .forecast:after {
+  clear: both; }
+
+/* line 50, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_main.sass */
+.group, .forecast {
+  *zoom: 1; }
+
+@media all and (min-width: 560px) {
+  /* line 2, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .forecast {
+    font-size: 2em; }
+
+  /* line 5, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .rightnow {
+    width: 97.85714%;
+    font-size: 2.2em; }
+
+  /* line 9, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .summary {
+    float: left;
+    width: 59.02143%; }
+
+  /* line 13, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .icon {
+    display: block;
+    margin: auto;
+    width: 40.97857%;
+    padding-bottom: 40.97857%; }
+
+  /* line 20, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .sunny, .mostlysunny, .clear {
+    background: url("../images/sunny.png") no-repeat center;
+    background-size: 80%; }
+
+  /* line 24, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .mostlycloudy, .partlycloudy, .snow {
+    background: url("../images/partly-cloudy.png") no-repeat center;
+    background-size: 80%; }
+
+  /* line 28, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .cloudy, .hazy {
+    background: url("../images/cloudy.png") no-repeat center;
+    background-size: 80%; }
+
+  /* line 32, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .sunny-rightnow {
+    background-position: 50%; } }
+@media all and (min-width: 768px) {
+  /* line 36, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .rightnow {
+    width: 98.69792%;
+    font-size: 3em; }
+
+  /* line 40, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .forecast {
+    float: left;
+    width: 48.4375%;
+    font-size: 2.5em; }
+
+  /* line 45, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .summary-forecast {
+    float: none;
+    width: 100%; }
+
+  /* line 49, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .summary-rightnow {
+    float: left;
+    width: 65%; }
+
+  /* line 53, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .icon {
+    float: none;
+    width: 60%;
+    padding-bottom: 60%; }
+
+  /* line 58, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .icon-rightnow {
+    float: left;
+    width: 35%;
+    padding-bottom: 35%; }
+
+  /* line 63, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .sunny {
+    background-size: 80%; }
+
+  /* line 66, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .sunny-rightnow {
+    background-size: 70%; } }
+@media all and (min-width: 1280px) {
+  /* line 70, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .forecast {
+    width: 19.0625%;
+    font-size: 1.5em; }
+
+  /* line 74, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-weather/css/_media-queries.sass */
+  .rightnow {
+    width: 99.21875%;
+    font-size: 3em; } }
