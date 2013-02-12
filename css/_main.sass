@@ -1,6 +1,6 @@
 .container
   @extend %center-box
-  max-width: 1280px
+  max-width: $width-4
   position: relative
 
 .week-grid
@@ -13,14 +13,15 @@
   @extend %hide
 
 .forecast
-  @extend .group
-  width: 97% /*400px*/
+  @extend .group // ensures floats cleared at other widths
+  +forecast-width($width-1, 5px, 0px, 1px, 1)
   font-size: 1.8em
   border: 1px solid black
   margin: 5px 5px
 
 .rightnow
-  width: 97.5%
+  @extend .group
+  +forecast-width($width-1, 5px, 0px, 0px, 1)
   margin: 5px 5px
   font-size: 2.5em
 
@@ -39,6 +40,15 @@
   width: 75%
   margin: 20px auto
   text-align: center
+
+.sunny, .mostlysunny, .clear
+  +weather-icon('../images/sunny.png')
+
+.mostlycloudy, .partlycloudy, .snow
+  +weather-icon('../images/partly-cloudy.png')
+
+.cloudy, .hazy
+  +weather-icon('../images/cloudy.png')
 
 .group:before, .group:after
   display: table

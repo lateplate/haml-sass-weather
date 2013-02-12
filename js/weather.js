@@ -39,8 +39,8 @@ $(document).ready(function() {
   }
 
   function queryWeatherData(queryEnd) {
-    // $.getJSON('proxy.php?url=http://api.wunderground.com/api/593fb0bac5e11e4a/conditions/forecast10day/q/' + queryEnd + '.json', function(json) {
-          $.getJSON('weather-data.json', function(json) {
+    $.getJSON('proxy.php?url=http://api.wunderground.com/api/593fb0bac5e11e4a/conditions/forecast10day/q/' + queryEnd + '.json', function(json) {
+          // $.getJSON('weather-data.json', function(json) {
 
       // Right now conditions
       $('#current-temp').html(json.contents.current_observation.temp_f + '&deg;');
